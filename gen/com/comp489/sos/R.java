@@ -25,36 +25,24 @@ public final class R {
         public static final int medbutton=0x7f020001;
     }
     public static final class id {
-<<<<<<< HEAD
-        public static final int action_settings=0x7f080007;
-        public static final int button1=0x7f080000;
-        public static final int button2=0x7f080001;
-        public static final int button3=0x7f080002;
-        public static final int button4=0x7f080004;
-        public static final int button5=0x7f080005;
-        public static final int button6=0x7f080003;
-        public static final int listView1=0x7f080006;
+        public static final int Fire=0x7f080002;
+        public static final int Natural_Disasters=0x7f080001;
+        public static final int action_settings=0x7f080005;
+        public static final int imageButtonMed=0x7f080003;
+        public static final int listView1=0x7f080004;
+        public static final int medical=0x7f080000;
     }
     public static final class layout {
         public static final int activity_earth_quakes=0x7f030000;
         public static final int activity_floods=0x7f030001;
         public static final int activity_home_screen=0x7f030002;
         public static final int activity_hurricanes=0x7f030003;
-        public static final int activity_natural_disasters=0x7f030004;
-        public static final int activity_tornados=0x7f030005;
-        public static final int activity_tsunami=0x7f030006;
-        public static final int activity_wild_fires=0x7f030007;
-=======
-        public static final int action_settings=0x7f080003;
-        public static final int imageButtonMed=0x7f080001;
-        public static final int listView1=0x7f080002;
-        public static final int medical=0x7f080000;
-    }
-    public static final class layout {
-        public static final int activity_home_screen=0x7f030000;
-        public static final int activity_medical=0x7f030001;
-        public static final int medical_home_screen=0x7f030002;
->>>>>>> d4af6b8166a99e6107c16a4163b13e8f6c37bb5f
+        public static final int activity_medical=0x7f030004;
+        public static final int activity_natural_disasters=0x7f030005;
+        public static final int activity_tornados=0x7f030006;
+        public static final int activity_tsunami=0x7f030007;
+        public static final int activity_wild_fires=0x7f030008;
+        public static final int medical_home_screen=0x7f030009;
     }
     public static final class menu {
         public static final int earth_quakes=0x7f070000;

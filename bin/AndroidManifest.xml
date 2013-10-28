@@ -22,7 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity
             android:name="com.comp489.sos.NaturalDisasters"
             android:label="@string/title_activity_natural_disasters" >
@@ -50,17 +49,16 @@
         <activity
             android:name="com.comp489.sos.Hurricanes"
             android:label="@string/title_activity_hurricanes" >
-=======
-        
+         </activity>   
         <activity
-            android:name="com.comp489.sos.MedicalActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MEDICAL" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
->>>>>>> d4af6b8166a99e6107c16a4163b13e8f6c37bb5f
-        </activity>
+           android:name="com.comp489.sos.MedicalActivity"
+                android:label="@string/app_name" >
+                <intent-filter>
+                    <action android:name="android.intent.action.MEDICAL" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
     </application>
 
 </manifest>

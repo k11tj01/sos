@@ -16,8 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="38dp"
         android:layout_marginTop="32dp"
-        android:text="Medical" />
-
+        android:text="Medical" />	
     <ImageButton
         android:id="@+id/imageButtonMed"
         android:layout_width="wrap_content"
@@ -27,5 +26,22 @@
         android:layout_marginLeft="42dp"
         android:layout_marginTop="81dp"
         android:src="@drawable/medbutton" />
+
+    <Button
+        android:id="@+id/Natural_Disasters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonMed"
+        android:layout_below="@+id/medical"
+        android:text="Natural Disasters" />
+
+    <Button
+        android:id="@+id/Fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonMed"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/medical"
+        android:text="Fire" />
 
 </RelativeLayout>
