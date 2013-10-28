@@ -22,6 +22,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.comp489.sos.NaturalDisasters"
+            android:label="@string/title_activity_natural_disasters" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.EarthQuakes"
+            android:label="@string/title_activity_earth_quakes" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Tsunami"
+            android:label="@string/title_activity_tsunami" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Floods"
+            android:label="@string/title_activity_floods" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.WildFires"
+            android:label="@string/title_activity_wild_fires" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Tornados"
+            android:label="@string/title_activity_tornados" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Hurricanes"
+            android:label="@string/title_activity_hurricanes" >
+        </activity>
     </application>
 
 </manifest>
