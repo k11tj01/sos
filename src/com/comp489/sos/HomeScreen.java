@@ -9,14 +9,15 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.*;
 
 public class HomeScreen extends Activity implements OnClickListener{
-	Button med;
+	ImageButton med;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home_screen);
-		med = (Button) findViewById(R.id.medical);
+		med = (ImageButton) findViewById(R.id.imageButtonMed);
 		med.setOnClickListener(this);
 	}
 
@@ -32,7 +33,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch(view.getId())
 		{
-			case R.id.medical:
+			case R.id.imageButtonMed:
 				Intent i1 = new Intent(this, MedicalActivity.class);			
 				startActivity(i1);
 				break;
