@@ -8,9 +8,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".HomeScreen" >
 
-    <TextView
+    <Button
+        android:id="@+id/medical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="32dp"
+        android:text="Medical" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/medical"
+        android:layout_below="@+id/medical"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="81dp"
+        android:src="@drawable/medbutton" />
 
 </RelativeLayout>
