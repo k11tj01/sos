@@ -27,7 +27,7 @@ public class NaturalDisasters extends Activity implements AdapterView.OnItemClic
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.home_screen, menu);
+		getMenuInflater().inflate(R.menu.natural_disasters, menu);
 		return true;
 	}
 	@SuppressLint("ShowToast")
@@ -42,19 +42,25 @@ public class NaturalDisasters extends Activity implements AdapterView.OnItemClic
 					t.show();
 					break;
 				case 1:
-					Toast t2 =  Toast.makeText(this,"Activity with Instructions for Tornados",Toast.LENGTH_LONG);
+					Toast t2 =  Toast.makeText(this,"Activity with Instructions for Floods",Toast.LENGTH_LONG);
 					t2.show();
 					break;
 				case 2:
-					Toast t3 =  Toast.makeText(this,"Activity with Instructions for Tsunamis",Toast.LENGTH_LONG);
+					Toast t3 =  Toast.makeText(this,"Activity with Instructions for Hurricanes",Toast.LENGTH_LONG);
 					t3.show();
 					break;
 				case 3:
-					Toast t4 = Toast.makeText(this, "Activity with Instructions for Floods", Toast.LENGTH_LONG);
+					Toast t4 = Toast.makeText(this, "Activity with Instructions for Wild Fires", Toast.LENGTH_LONG);
+					t4.show();
+					break;
 				case 4:
-					Toast t5 = Toast.makeText(this, "Activity with Instructions for Hurricanes", Toast.LENGTH_LONG);
+					Toast t5 = Toast.makeText(this, "Activity with Instructions for Tornados", Toast.LENGTH_LONG);
+					t5.show();
+					break;
 				case 5:
-					Toast t6 = Toast.makeText(this, "Activity with Instructions for Wild Fires", Toast.LENGTH_LONG);	
+					Toast t6 = Toast.makeText(this, "Activity with Instructions for Tsunamis", Toast.LENGTH_LONG);
+					t6.show();
+					break;
 			}	
 		}
 

@@ -39,9 +39,6 @@
         android:id="@+id/Fire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageButtonMed"
-        android:layout_marginLeft="18dp"
-        android:layout_toRightOf="@+id/medical"
         android:text="Fire" />
 
 </RelativeLayout>

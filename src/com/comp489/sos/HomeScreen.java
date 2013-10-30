@@ -37,6 +37,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 			case R.id.imageButtonMed:
 				Intent i1 = new Intent(this, MedicalActivity.class);			
 				startActivity(i1);
+				break;
 			case R.id.Natural_Disasters:
 				Intent i2 = new Intent(this, NaturalDisasters.class);
 				startActivity(i2);
