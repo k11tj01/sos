@@ -25,7 +25,10 @@ public final class R {
         public static final int medbutton=0x7f020001;
     }
     public static final class id {
+<<<<<<< HEAD
     	
+=======
+>>>>>>> 82cb1a606e5ffb7912b4d224f522bfbe4a87a9c9
         public static final int Fire=0x7f080003;
         public static final int Natural_Disasters=0x7f080002;
         public static final int action_settings=0x7f080005;
@@ -36,19 +39,19 @@ public final class R {
     public static final class layout {
         public static final int activity_earth_quakes=0x7f030000;
         public static final int activity_floods=0x7f030001;
-        public static final int activity_home_screen=0x7f030002;
         public static final int activity_hurricanes=0x7f030003;
-        public static final int activity_medical=0x7f030004;
         public static final int activity_natural_disasters=0x7f030005;
         public static final int activity_tornados=0x7f030006;
         public static final int activity_tsunami=0x7f030007;
         public static final int activity_wild_fires=0x7f030008;
-        public static final int medical_home_screen=0x7f030009;
+        public static final int activity_cprinstr=0x7f030000;
+        public static final int activity_home_screen=0x7f030001;
+        public static final int activity_medical=0x7f030002;
+        public static final int medical_home_screen=0x7f030003;
     }
     public static final class menu {
         public static final int earth_quakes=0x7f070000;
         public static final int floods=0x7f070001;
-        public static final int home_screen=0x7f070002;
         public static final int hurricanes=0x7f070003;
         public static final int natural_disasters=0x7f070004;
         public static final int tornados=0x7f070005;
@@ -59,6 +62,7 @@ public final class R {
         public static final int listView1=0x7f080003;
         public static final int medical=0x7f080001;
         public static final int webView1=0x7f080000;
+<<<<<<< HEAD
     }
     public static final class layout1 {
         public static final int activity_cprinstr=0x7f030000;
@@ -67,9 +71,12 @@ public final class R {
         public static final int medical_home_screen=0x7f030003;
     }
     public static final class menu1 {
+=======
+>>>>>>> 82cb1a606e5ffb7912b4d224f522bfbe4a87a9c9
         public static final int cprinstr=0x7f070000;
         public static final int home_screen=0x7f070001;
     }
+
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
