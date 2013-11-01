@@ -4,6 +4,7 @@
     <string name="app_name">SOS</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+<<<<<<< HEAD
     <string name="title_activity_natural_disasters">NaturalDisasters</string>
     <string name="title_activity_earth_quakes">EarthQuakes</string>
     <string name="title_activity_tsunami">Tsunami</string>
@@ -11,5 +12,8 @@
     <string name="title_activity_wild_fires">WildFires</string>
     <string name="title_activity_tornados">Tornados</string>
     <string name="title_activity_hurricanes">Hurricanes</string>
+=======
+    <string name="title_activity_cprinstr">CPRInstr</string>
+>>>>>>> 85b3c34983a0dd50c46c1426b7aedea0364b5668
 
 </resources>

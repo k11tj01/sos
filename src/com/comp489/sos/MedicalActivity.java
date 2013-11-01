@@ -1,6 +1,7 @@
 package com.comp489.sos;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -47,6 +48,8 @@ public class MedicalActivity extends Activity implements AdapterView.OnItemClick
 			case 0:
 				Toast t =  Toast.makeText(this,"Activity with CPR Instructions",Toast.LENGTH_LONG);
 				t.show();
+				Intent i1 = new Intent(this, CPRInstr.class);			
+				startActivity(i1);
 				break;
 			case 1:
 				Toast t2 =  Toast.makeText(this,"Activity with Stroke Symptoms",Toast.LENGTH_LONG);
