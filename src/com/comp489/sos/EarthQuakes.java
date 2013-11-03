@@ -1,8 +1,11 @@
 package com.comp489.sos;
 
-import android.os.Bundle;
+import android.R;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class EarthQuakes extends Activity {
 
@@ -10,6 +13,9 @@ public class EarthQuakes extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_earth_quakes);
+		WebView myWebView = (WebView) findViewById(R.id.webview);
+		myWebView.loadUrl("http://http://www.ugr.es/~iag/divulgacion/div_d_e.html");
+		myWebView.setWebViewClient(new WebViewClient());
 	}
 
 	@Override
