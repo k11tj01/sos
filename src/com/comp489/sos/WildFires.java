@@ -3,6 +3,8 @@ package com.comp489.sos;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class WildFires extends Activity {
 
@@ -10,6 +12,9 @@ public class WildFires extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_wild_fires);
+		WebView myWebView = (WebView) findViewById(R.id.webview);
+		myWebView.loadUrl("http://www.redcross.org/prepare/disaster/wildfire");
+		myWebView.setWebViewClient(new WebViewClient());
 	}
 
 	@Override

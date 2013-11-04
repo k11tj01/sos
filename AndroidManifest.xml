@@ -3,12 +3,13 @@
     package="com.comp489.sos"
     android:versionCode="1"
     android:versionName="1.0" >
+
     <uses-permission android:name="android.permission.INTERNET" />
-    
+
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -49,13 +50,15 @@
             android:name="com.comp489.sos.Tornados"
             android:label="@string/title_activity_tornados" >
             android:name="com.comp489.sos.MedicalActivity"
-            android:label="@string/app_name" 
-            </activity>
-            <intent-filter>
-                <action android:name="android.intent.action.MEDICAL" />
+            android:label="@string/app_name" 
+        </activity>
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.MEDICAL" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
         <activity
             android:name="com.comp489.sos.CPRInstr"
             android:label="@string/title_activity_cprinstr" >
@@ -68,16 +71,24 @@
         <activity
             android:name="com.comp489.sos.Hurricanes"
             android:label="@string/title_activity_hurricanes" >
-         </activity>   
+        </activity>
         <activity
-           android:name="com.comp489.sos.MedicalActivity"
-                android:label="@string/app_name" >
-                <intent-filter>
-                    <action android:name="android.intent.action.MEDICAL" />
+            android:name="com.comp489.sos.MedicalActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDICAL" />
 
-                    <category android:name="android.intent.category.DEFAULT" />
-                </intent-filter>
-            </activity>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.comp489.sos.WinterStorm"
+            android:label="@string/title_activity_winter_storm" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Volcano"
+            android:label="@string/title_activity_volcano" >
+        </activity>
     </application>
 
 </manifest>
