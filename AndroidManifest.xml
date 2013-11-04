@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.comp489.sos"
@@ -87,3 +88,99 @@
     </application>
 
 </manifest>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.comp489.sos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.comp489.sos.HomeScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.comp489.sos.NaturalDisasters"
+            android:label="@string/title_activity_natural_disasters" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.EarthQuakes"
+            android:label="@string/title_activity_earth_quakes" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Tsunami"
+            android:label="@string/title_activity_tsunami" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Floods"
+            android:label="@string/title_activity_floods" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.WildFires"
+            android:label="@string/title_activity_wild_fires" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Tornados"
+            android:label="@string/title_activity_tornados" >
+            android:name="com.comp489.sos.MedicalActivity"
+            android:label="@string/app_name" 
+        </activity>
+
+        <intent-filter>
+            <action android:name="android.intent.action.MEDICAL" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+        <activity
+            android:name="com.comp489.sos.CPRInstr"
+            android:label="@string/title_activity_cprinstr" >
+            <intent-filter>
+                <action android:name="android.intent.action.CPR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Hurricanes"
+            android:label="@string/title_activity_hurricanes" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.MedicalActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDICAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.comp489.sos.WinterStorm"
+            android:label="@string/title_activity_winter_storm" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Volcano"
+            android:label="@string/title_activity_volcano" >
+        </activity>
+    </application>
+
+</manifest>
+>>>>>>> 6783746ed7c0466e0d02060b5fc36add273bb088
