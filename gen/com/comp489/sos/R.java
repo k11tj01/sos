@@ -25,13 +25,14 @@ public final class R {
         public static final int medbutton=0x7f020001;
     }
     public static final class id {
-        public static final int Fire=0x7f080004;
-        public static final int Natural_Disasters=0x7f080003;
-        public static final int action_settings=0x7f080006;
-        public static final int imageButtonMed=0x7f080002;
-        public static final int listView1=0x7f080005;
-        public static final int medical=0x7f080001;
+        public static final int Fire=0x7f080005;
+        public static final int Natural_Disasters=0x7f080004;
+        public static final int action_settings=0x7f080007;
+        public static final int imageButtonMed=0x7f080003;
+        public static final int listView1=0x7f080006;
+        public static final int medical=0x7f080002;
         public static final int webView1=0x7f080000;
+        public static final int webview=0x7f080001;
     }
     public static final class layout {
         public static final int activity_cprinstr=0x7f030000;
@@ -71,7 +72,9 @@ public final class R {
         public static final int title_activity_send_alert_sms=0x7f05000b;
         public static final int title_activity_tornados=0x7f050008;
         public static final int title_activity_tsunami=0x7f050005;
+        public static final int title_activity_volcano=0x7f05000d;
         public static final int title_activity_wild_fires=0x7f050007;
+        public static final int title_activity_winter_storm=0x7f05000c;
     }
     public static final class style {
         /** 

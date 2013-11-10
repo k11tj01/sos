@@ -12,11 +12,8 @@
     <string name="title_activity_tornados">Tornados</string>
     <string name="title_activity_hurricanes">Hurricanes</string>
     <string name="title_activity_cprinstr">CPRInstr</string>
-<<<<<<< HEAD
     <string name="title_activity_send_alert_sms">SendAlertSMS</string>
-=======
     <string name="title_activity_winter_storm">WinterStorm</string>
     <string name="title_activity_volcano">Volcano</string>
->>>>>>> 6783746ed7c0466e0d02060b5fc36add273bb088
 
 </resources>
