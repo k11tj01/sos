@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
+//import android.webkit.WebViewClient;
 
 public class Hurricanes extends Activity {
 
@@ -14,7 +14,7 @@ public class Hurricanes extends Activity {
 		setContentView(R.layout.activity_hurricanes);
 		WebView myWebView = (WebView) findViewById(R.id.webview);
 		myWebView.loadUrl("http://www.redcross.org/prepare/disaster/hurricane");
-		myWebView.setWebViewClient(new WebViewClient());
+		//myWebView.setWebViewClient(new WebViewClient());
 	}
 
 	@Override
