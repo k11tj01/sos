@@ -5,14 +5,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.widget.*;
 public class MedicalActivity extends Activity implements AdapterView.OnItemClickListener {
 
 	ListView list;
+	Button alert;
 	String[] choices = {"CPR", "STROKE", "HEIMLICH MANEUVER", "HEAT-RELATED ILLNESS", "POISONING"};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,22 @@ public class MedicalActivity extends Activity implements AdapterView.OnItemClick
 		setContentView(R.layout.activity_medical);
 		
 		list = (ListView) findViewById(R.id.listView1);
+		alert = (Button) findViewById(R.id.alert);
+		
+		OnClickListener listener = new View.OnClickListener()
+		{
+
+			@Override
+			public void onClick(View b) {
+				// TODO Auto-generated method stub
+				
+				
+				
+			}
+			
+		};
+		
+		alert.setOnClickListener(listener);
 		
 		//adapter sends row data to list view, in android specified format (TextView)
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,choices);
