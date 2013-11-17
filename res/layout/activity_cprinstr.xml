@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ >
+ <!-- TableLayout works for scrolling, but not RelativeLayout... -->
+<TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:orientation="vertical" >
+
+  <!-- <WebView
+       android:id="@+id/webView1"
+         android:layout_width="match_parent"
+   		 android:layout_height="match_parent"
+       /> -->
+       
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="CALL"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cprcall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+		android:layout_alignParentBottom="true"
+        android:text="1. Check the victim for unresponsiveness.\n\n2. Call 911 if not breathing normally\n\n" />
+
+<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="PUMP"
+        android:textAppearance="?android:attr/textAppearanceLarge" />   
+
+     <ImageView
+         android:id="@+id/imageButton2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:src="@drawable/cpr_pump" />
+     
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+		android:layout_alignParentBottom="true"
+        android:text="1. If not moving, coughing, breathing normally, start chest compressions: \n\n2. Push down in the center of the chest 2 inches 30 times, ~rate 100/min\n\n" />
+     
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="BLOW"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+        
+     <ImageView
+         android:id="@+id/imageButton2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:src="@drawable/cprinstr_blow" />
+     
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+		android:layout_alignParentBottom="true"
+        android:text="1. Tilt the head back and lift the chin.\n\n 2. Pinch nose and cover the mouth with yours and blow until you see the chest rise. Give 2 breaths.  Each breath should take 1 second\n\n" />
+     
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+		android:layout_alignParentBottom="true"
+        android:text="Info from http://depts.washington.edu/learncpr/quickcpr.html" />
+     
+       
+</TableLayout>
+</ScrollView>
