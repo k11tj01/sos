@@ -21,53 +21,54 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int cpr_pump=0x7f020000;
-        public static final int cprcall=0x7f020001;
-        public static final int cprinstr_blow=0x7f020002;
-        public static final int heimlich_stand=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int medbutton=0x7f020005;
+        public static final int dch=0x7f020000;
+        public static final int deq=0x7f020001;
+        public static final int eq=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int medbutton=0x7f020004;
     }
     public static final class id {
-        public static final int Fire=0x7f080008;
-        public static final int Natural_Disasters=0x7f080007;
-        public static final int action_settings=0x7f08000b;
-        public static final int alert=0x7f080009;
-        public static final int imageButton1=0x7f080001;
-        public static final int imageButton2=0x7f080003;
-        public static final int imageButtonMed=0x7f080006;
-        public static final int listView1=0x7f08000a;
-        public static final int medical=0x7f080005;
-        public static final int textView1=0x7f080002;
-        public static final int textView2=0x7f080000;
-        public static final int webview=0x7f080004;
+        public static final int Fire=0x7f08000a;
+        public static final int Natural_Disasters=0x7f080009;
+        public static final int action_settings=0x7f08000e;
+        public static final int alert=0x7f08000c;
+        public static final int imageButtonMed=0x7f080008;
+        public static final int imageView1=0x7f080000;
+        public static final int imageView2=0x7f080003;
+        public static final int imageView3=0x7f080005;
+        public static final int listView1=0x7f08000d;
+        public static final int medical=0x7f080007;
+        public static final int scrollView1=0x7f080002;
+        public static final int textView1=0x7f080001;
+        public static final int textView2=0x7f080004;
+        public static final int textView3=0x7f080006;
+        public static final int webview=0x7f08000b;
     }
     public static final class layout {
-        public static final int activity_cprinstr=0x7f030000;
-        public static final int activity_earth_quakes=0x7f030001;
-        public static final int activity_floods=0x7f030002;
-        public static final int activity_heimlich_instr=0x7f030003;
-        public static final int activity_home_screen=0x7f030004;
-        public static final int activity_hurricanes=0x7f030005;
-        public static final int activity_medical=0x7f030006;
-        public static final int activity_natural_disasters=0x7f030007;
-        public static final int activity_tornados=0x7f030008;
-        public static final int activity_tsunami=0x7f030009;
-        public static final int activity_wild_fires=0x7f03000a;
+        public static final int activity_earth_quakes=0x7f030000;
+        public static final int activity_floods=0x7f030001;
+        public static final int activity_home_screen=0x7f030002;
+        public static final int activity_hurricanes=0x7f030003;
+        public static final int activity_medical=0x7f030004;
+        public static final int activity_natural_disasters=0x7f030005;
+        public static final int activity_tornados=0x7f030006;
+        public static final int activity_tsunami=0x7f030007;
+        public static final int activity_volcano=0x7f030008;
+        public static final int activity_wild_fires=0x7f030009;
+        public static final int activity_winter_storm=0x7f03000a;
         public static final int medical_home_screen=0x7f03000b;
     }
     public static final class menu {
-        public static final int cprinstr=0x7f070000;
-        public static final int earth_quakes=0x7f070001;
-        public static final int floods=0x7f070002;
-        public static final int heimlich_instr=0x7f070003;
-        public static final int home_screen=0x7f070004;
-        public static final int hurricanes=0x7f070005;
-        public static final int natural_disasters=0x7f070006;
-        public static final int send_alert_sm=0x7f070007;
-        public static final int tornados=0x7f070008;
-        public static final int tsunami=0x7f070009;
-        public static final int wild_fires=0x7f07000a;
+        public static final int earth_quakes=0x7f070000;
+        public static final int floods=0x7f070001;
+        public static final int home_screen=0x7f070002;
+        public static final int hurricanes=0x7f070003;
+        public static final int natural_disasters=0x7f070004;
+        public static final int tornados=0x7f070005;
+        public static final int tsunami=0x7f070006;
+        public static final int volcano=0x7f070007;
+        public static final int wild_fires=0x7f070008;
+        public static final int winter_storm=0x7f070009;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
