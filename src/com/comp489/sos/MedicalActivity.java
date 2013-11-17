@@ -13,7 +13,7 @@ import android.widget.*;
 public class MedicalActivity extends Activity implements AdapterView.OnItemClickListener {
 
 	ListView list;
-	String[] choices = {"CPR", "STROKE", "HEIMLICH MANEUVER"};
+	String[] choices = {"CPR", "STROKE", "HEIMLICH MANEUVER", "HEAT-RELATED ILLNESS", "POISONING"};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -58,7 +58,13 @@ public class MedicalActivity extends Activity implements AdapterView.OnItemClick
 			case 2:
 				Toast t3 =  Toast.makeText(this,"Activity with Heimlich Instructions",Toast.LENGTH_LONG);
 				t3.show();
-				break;				
+				break;
+			case 3:
+				Toast.makeText(this,"Activity with Heat Instructions",Toast.LENGTH_LONG).show();
+				break;	
+			case 4:
+				Toast.makeText(this,"Activity with Poisoning Response Instr",Toast.LENGTH_LONG).show();
+				break;	
 		}	
 	}
 }
