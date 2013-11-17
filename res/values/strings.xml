@@ -12,7 +12,9 @@
     <string name="title_activity_tornados">Tornados</string>
     <string name="title_activity_hurricanes">Hurricanes</string>
     <string name="title_activity_cprinstr">CPRInstr</string>
+    <string name="title_activity_send_alert_sms">SendAlertSMS</string>
     <string name="title_activity_winter_storm">WinterStorm</string>
     <string name="title_activity_volcano">Volcano</string>
+    <string name="title_activity_heimlich_instr">HeimlichInstr</string>
 
 </resources>

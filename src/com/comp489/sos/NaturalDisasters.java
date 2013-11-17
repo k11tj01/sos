@@ -77,7 +77,7 @@ public class NaturalDisasters extends Activity implements AdapterView.OnItemClic
 					Intent i6 = new Intent(this,Tsunami.class);
 					startActivity(i6);
 					break;
-				case 6:
+				/*case 6:
 					Toast t7 = Toast.makeText(this, "Activity with Instructions for Winter-storms", Toast.LENGTH_LONG);
 					t7.show();
 					Intent i7 = new Intent(this,WinterStorm.class);
@@ -88,7 +88,7 @@ public class NaturalDisasters extends Activity implements AdapterView.OnItemClic
 					t8.show();
 					Intent i8 = new Intent(this,Volcano.class);
 					startActivity(i8);
-					break;
+					break;*/
 			}	
 		}
 	}
