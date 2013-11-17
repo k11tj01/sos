@@ -1,16 +1,61 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Floods" >
-
-<WebView  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/webview"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"/>
+    android:layout_height="fill_parent">
+	
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="105dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/eq" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/scrollView1"
+            android:text="•Become aware of fire evacuation and earthquake safety plans for all of the buildings you occupy regularly" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/dch" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/scrollView1"
+            android:layout_below="@+id/scrollView1"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.55"
+            android:gravity="left"
+            android:text="•Practice drop, cover and hold on \n•Keep a flashlight and sturdy shoes by each person’s bed in case the earthquake strikes in the middle of the night. \n•Hang heavy items, such as pictures and mirrors, away from beds, couches and anywhere people sleep or sit. " />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:src="@drawable/deq" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•If you are in bed, stay there, curl up and hold on. Protect your head with a pillow.\n•Stay away from windows to avoid being injured by shattered glass.\n•If outside, find a clear spot (away from buildings, power lines, trees, streetlights) and drop to the ground. Stay there until the shaking stops." 
+            android:gravity="left"
+            />
+
+    </TableLayout>
+	
+</ScrollView>
