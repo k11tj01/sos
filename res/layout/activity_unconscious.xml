@@ -12,15 +12,15 @@
 
      <ImageView
          android:id="@+id/imageButton2"
-         android:layout_width="wrap_content"
-         android:layout_height="422dp"
-         android:src="@drawable/choking1" />
+         android:layout_width="fill_parent"
+         android:layout_height="524dp"
+         android:src="@drawable/unconscious" />
 
      <ImageView
          android:id="@+id/imageButton3"
-         android:layout_width="wrap_content"
-         android:layout_height="500dp"
-         android:src="@drawable/choking2" />
+         android:layout_width="fill_parent"
+         android:layout_height="172dp"
+         android:src="@drawable/unconscious2" />
 
  </TableLayout>
 

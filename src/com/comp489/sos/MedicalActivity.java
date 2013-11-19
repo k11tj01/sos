@@ -15,7 +15,7 @@ public class MedicalActivity extends Activity implements AdapterView.OnItemClick
 
 	ListView list;
 	Button alert;
-	String[] choices = {"CPR", "STROKE", "HEIMLICH MANEUVER", "HEAT-RELATED ILLNESS", "POISONING"};
+	String[] choices = {"UNCONSCIOUS", "CPR", "STROKE", "CHOKING", "HEAD/NECK/SPINE INJURY", "SEVERE BLEEDING"};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -64,24 +64,23 @@ public class MedicalActivity extends Activity implements AdapterView.OnItemClick
 		switch (i)
 		{
 			case 0:
-//				Toast t =  Toast.makeText(this,"Activity with CPR Instructions",Toast.LENGTH_LONG);
-//				t.show();
-				Intent i1 = new Intent(this, CPRInstr.class);			
+				startActivity(new Intent(this, Unconscious.class));
+				break;	
+			case 1:
+				Intent i1 = new Intent(this, CPR.class);			
 				startActivity(i1);
 				break;
-			case 1:
-				Toast t2 =  Toast.makeText(this,"Activity with Stroke Symptoms",Toast.LENGTH_LONG);
-				t2.show();
-				break;
 			case 2:
-				Toast t3 =  Toast.makeText(this,"Activity with Heimlich Instructions",Toast.LENGTH_LONG);
-				t3.show();
+				startActivity(new Intent(this, Stroke.class));
 				break;
 			case 3:
-				Toast.makeText(this,"Activity with Heat Instructions",Toast.LENGTH_LONG).show();
-				break;	
+				startActivity(new Intent(this, Choking.class));
+				break;
 			case 4:
-				Toast.makeText(this,"Activity with Poisoning Response Instr",Toast.LENGTH_LONG).show();
+				startActivity(new Intent(this, SpineNeckHeadInjury.class));
+				break;	
+			case 5:
+				startActivity(new Intent(this, SevereBleeding.class));
 				break;	
 		}	
 	}

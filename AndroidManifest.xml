@@ -86,6 +86,30 @@
             android:name="com.comp489.sos.HeimlichInstr"
             android:label="@string/title_activity_heimlich_instr" >
         </activity>
+        <activity
+            android:name="com.comp489.sos.Unconscious"
+            android:label="@string/title_activity_unconscious" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.SevereBleeding"
+            android:label="@string/title_activity_severe_bleeding" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Stroke"
+            android:label="@string/title_activity_stroke" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.SpineNeckHeadInjury"
+            android:label="@string/title_activity_spine_neck_head_injury" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.MyHealthInsurance"
+            android:label="@string/title_activity_my_health_insurance" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.ViewHealthInsurance"
+            android:label="@string/title_activity_view_health_insurance" >
+        </activity>
     </application>
 
 </manifest>

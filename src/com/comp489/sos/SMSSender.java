@@ -1,4 +1,4 @@
-package com.comp489.sos;
+/*package com.comp489.sos;
 
 
 
@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class SendSMSClass  {
+public class SMSSender  {
 	
 	BroadcastReceiver sentReceiver, deliveredReceiver;
 	public static final String SENT = "SMS_SENT";
@@ -27,16 +27,14 @@ public class SendSMSClass  {
 	
 	//(not fired by emulator)
 	final PendingIntent delivPI = PendingIntent.getBroadcast(context, 0, new Intent(DELIVERED), 0);
-	public SendSMSClass(Context c, String m, int buttonID)
+	public SMSSender(Context c, String m, int buttonID)
 	{
 		context = (Activity) c;
 		message = m;
 		id = buttonID;
 	
-<<<<<<< HEAD
-=======
+	}
 	
->>>>>>> 540cc71a2085d519b52af8f863c238c2b64f65da
 	sentReceiver = new BroadcastReceiver()
 	{
 
@@ -100,8 +98,7 @@ public class SendSMSClass  {
 	context.registerReceiver(deliveredReceiver, new IntentFilter(DELIVERED));
 	
 	Button sendBtn = (Button) context.findViewById(id);
-	sendBtn.setOnClickListener(new Button.OnClickListener()
-	{
+	sendBtn.setOnClickListener(new Button.OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
@@ -117,5 +114,5 @@ public class SendSMSClass  {
 		}
 	});
 
-}
-}
+}*/
+

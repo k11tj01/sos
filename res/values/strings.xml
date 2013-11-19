@@ -8,13 +8,19 @@
     <string name="title_activity_earth_quakes">EarthQuakes</string>
     <string name="title_activity_tsunami">Tsunami</string>
     <string name="title_activity_floods">Floods</string>
-    <string name="title_activity_wild_fires">WildFires</string>
+    <string name="title_activity_wild_fires">Wildfires</string>
     <string name="title_activity_tornados">Tornados</string>
     <string name="title_activity_hurricanes">Hurricanes</string>
-    <string name="title_activity_cprinstr">CPRInstr</string>
+    <string name="title_activity_cprinstr">CPR</string>
     <string name="title_activity_send_alert_sms">SendAlertSMS</string>
     <string name="title_activity_winter_storm">WinterStorm</string>
     <string name="title_activity_volcano">Volcano</string>
-    <string name="title_activity_heimlich_instr">HeimlichInstr</string>
+    <string name="title_activity_heimlich_instr">Choking</string>
+    <string name="title_activity_unconscious">Unconscious</string>
+    <string name="title_activity_severe_bleeding">Severe Bleeding</string>
+    <string name="title_activity_stroke">Stroke</string>
+    <string name="title_activity_spine_neck_head_injury">Spine, Neck, or Head Injury</string>
+    <string name="title_activity_my_health_insurance">MyHealthInsurance</string>
+    <string name="title_activity_view_health_insurance">ViewHealthInsurance</string>
 
 </resources>
