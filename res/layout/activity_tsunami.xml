@@ -14,7 +14,6 @@
             android:layout_gravity="center"
             android:src="@drawable/tsue" />
 
-<<<<<<< HEAD
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -41,9 +40,7 @@
             android:layout_weight="0.55"
             android:gravity="left"
             android:text="•If you hear an official tsunami warning or detect signs of a tsunami, evacuate at once.\n•ake your emergency preparedness kit. Having supplies will make you more comfortable during the evacuation.\n•Get to higher ground as far inland as possible. Watching a tsunami could put you in grave danger. If you can see the wave, you are too close to escape it. " />
-=======
 
->>>>>>> 540cc71a2085d519b52af8f863c238c2b64f65da
 
       
     </TableLayout>

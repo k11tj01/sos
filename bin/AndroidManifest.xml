@@ -103,7 +103,7 @@
             android:label="@string/title_activity_spine_neck_head_injury" >
         </activity>
         <activity
-            android:name="com.comp489.sos.MyHealthInsurance"
+            android:name="com.comp489.sos.EnterHealthInsurance"
             android:label="@string/title_activity_my_health_insurance" >
         </activity>
         <activity

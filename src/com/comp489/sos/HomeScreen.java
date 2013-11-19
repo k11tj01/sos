@@ -13,6 +13,7 @@ import android.widget.*;
 public class HomeScreen extends Activity implements OnClickListener{
 	ImageButton med;
 	Button naturalDisasters;
+	Button hi;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -21,6 +22,9 @@ public class HomeScreen extends Activity implements OnClickListener{
 		med.setOnClickListener(this);
 		naturalDisasters = (Button) findViewById(R.id.Natural_Disasters);
 		naturalDisasters.setOnClickListener(this);
+		hi = (Button) findViewById(R.id.hi);
+		
+		hi.setOnClickListener(this);
 	}
 
 	@Override
@@ -44,6 +48,8 @@ public class HomeScreen extends Activity implements OnClickListener{
 		//	case R.id.Fire:
 			//	Intent i3 = new Intent(this, FireActivity.class)
 				break;
+			case R.id.hi:
+				startActivity(new Intent(this, EnterHealthInsurance.class));
 		}
 	}
 	/*public void onClick2(View view){
