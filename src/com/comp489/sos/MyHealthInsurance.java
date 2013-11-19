@@ -13,9 +13,9 @@ public class MyHealthInsurance extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_my_health_insurance);
-		provider = (EditText) findViewById(R.layout.provider);
-		policyNo = (EditText) findViewById(R.layout.policyNo);
-		policyOwner = (EditText) findViewById(R.layout.policyOwner);
+//		provider = (EditText) findViewById(R.layout.provider);
+//		policyNo = (EditText) findViewById(R.layout.policyNo);
+//		policyOwner = (EditText) findViewById(R.layout.policyOwner);
 	}
 
 	@Override

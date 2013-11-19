@@ -14,7 +14,7 @@
             android:layout_gravity="center"
             android:src="@drawable/t" />
 
-<<<<<<< HEAD
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -41,8 +41,6 @@
             android:layout_weight="0.55"
             android:gravity="left"
             android:text="•The safest place to be is an underground shelter, basement or safe room.\n•If no underground shelter or safe room is available, a small, windowless interior room or hallway on the lowest level of a sturdy building is the safest alternative. \n•Go to the nearest sturdy building or shelter immediately, using your seat belt if driving.\n•Do not wait until you see the tornado. " />
-=======
->>>>>>> 540cc71a2085d519b52af8f863c238c2b64f65da
 
       
     </TableLayout>
