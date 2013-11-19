@@ -18,6 +18,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 	Button fire;
 	Button sendAlert;
 	Button healthInfo;
+	Button hi;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,6 +27,9 @@ public class HomeScreen extends Activity implements OnClickListener{
 		naturalDisasters = (Button) findViewById(R.id.Natural_Disasters);
 		naturalDisasters.setOnClickListener(this);
 		//medical = (Button) findViewById(R.id.)
+		hi = (Button) findViewById(R.id.hi);
+		
+		hi.setOnClickListener(this);
 	}
 
 	@Override
@@ -50,6 +54,11 @@ public class HomeScreen extends Activity implements OnClickListener{
 				//Intent i3 = new Intent(this, Fire.class)
 				//break;
 			//case R.id	
+		//	case R.id.Fire:
+			//	Intent i3 = new Intent(this, FireActivity.class)
+				break;
+			case R.id.hi:
+				startActivity(new Intent(this, EnterHealthInsurance.class));
 		}
 	}
 	/*public void onClick2(View view){

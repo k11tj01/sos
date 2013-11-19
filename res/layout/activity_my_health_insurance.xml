@@ -13,21 +13,18 @@
         android:id="@+id/provider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" " 
-        android:hint="Enter Provider"/>
+        android:hint="Insurance Provider"/>
     
     <EditText
         android:id="@+id/policyNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" " 
-        android:hint="Enter Policy No."/>
+        android:hint="Policy Number"/>
     
     <EditText
         android:id="@+id/policyOwner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" " 
-        android:hint="Enter PolicyOwner"/>
+        android:hint="Policy Owner"/>
 
 </LinearLayout>
