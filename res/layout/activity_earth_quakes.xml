@@ -27,7 +27,6 @@
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="109dp"
-            android:layout_gravity="center"
             android:layout_marginLeft="17dp"
             android:src="@drawable/dch" />
 
@@ -45,16 +44,18 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:src="@drawable/deq" />
+            android:layout_height="73dp"
+            android:layout_weight="0.04"
+            android:src="@drawable/deq"
+            android:text="\n" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="•If you are in bed, stay there, curl up and hold on. Protect your head with a pillow.\n•Stay away from windows to avoid being injured by shattered glass.\n•If outside, find a clear spot (away from buildings, power lines, trees, streetlights) and drop to the ground. Stay there until the shaking stops." 
+            android:layout_weight="0.19"
             android:gravity="left"
-            />
+            android:text="•If you are in bed, stay there, curl up and hold on. Protect your head with a pillow.\n•Stay away from windows to avoid being injured by shattered glass.\n•If outside, find a clear spot (away from buildings, power lines, trees, streetlights) and drop to the ground. Stay there until the shaking stops." />
 
     </TableLayout>
 	

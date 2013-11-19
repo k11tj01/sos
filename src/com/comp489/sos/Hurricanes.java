@@ -12,8 +12,8 @@ public class Hurricanes extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hurricanes);
-		WebView myWebView = (WebView) findViewById(R.id.webview);
-		myWebView.loadUrl("http://www.redcross.org/prepare/disaster/hurricane");
+//		WebView myWebView = (WebView) findViewById(R.id.webview);
+//		myWebView.loadUrl("http://www.redcross.org/prepare/disaster/hurricane");
 		//myWebView.setWebViewClient(new WebViewClient());
 	}
 

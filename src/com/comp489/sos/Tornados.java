@@ -12,9 +12,9 @@ public class Tornados extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tornados);
-		WebView myWebView = (WebView) findViewById(R.id.webview);
-		myWebView.loadUrl("http://www.redcross.org/prepare/disaster/tornado");
-		myWebView.setWebViewClient(new WebViewClient());
+//		WebView myWebView = (WebView) findViewById(R.id.webview);
+//		myWebView.loadUrl("http://www.redcross.org/prepare/disaster/tornado");
+//		myWebView.setWebViewClient(new WebViewClient());
 	}
 
 	@Override

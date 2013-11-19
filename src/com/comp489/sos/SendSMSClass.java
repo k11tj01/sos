@@ -32,7 +32,7 @@ public class SendSMSClass  {
 		context = (Activity) c;
 		message = m;
 		id = buttonID;
-	}
+	
 	sentReceiver = new BroadcastReceiver()
 	{
 

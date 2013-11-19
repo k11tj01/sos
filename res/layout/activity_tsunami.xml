@@ -1,17 +1,47 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Tsunami" >
-
-
-<WebView  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/webview"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"/>
+    android:layout_height="fill_parent">
+	
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="105dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tsue" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/scrollView1"
+            android:text="•The International Tsunami Warning System monitors ocean waves after any Pacific earthquake with a magnitude greater than 6.5. If waves are detected, warnings are issued to local authorities who can order the evacuation of low-lying areas if necessary.\n•Find out if your home, school, workplace or other frequently visited locations are in tsunami hazard areas.\n•Know the height of your street above sea level and the distance of your street from the coast or other high-risk waters. Evacuation orders may be based on these numbers." />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/dtsu" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/scrollView1"
+            android:layout_below="@+id/scrollView1"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.55"
+            android:gravity="left"
+            android:text="•If you hear an official tsunami warning or detect signs of a tsunami, evacuate at once.\n•ake your emergency preparedness kit. Having supplies will make you more comfortable during the evacuation.\n•Get to higher ground as far inland as possible. Watching a tsunami could put you in grave danger. If you can see the wave, you are too close to escape it. " />
+
+      
+    </TableLayout>
+	
+</ScrollView>

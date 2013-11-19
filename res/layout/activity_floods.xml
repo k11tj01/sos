@@ -12,7 +12,7 @@
             android:layout_width="105dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
-            android:src="@drawable/eq" />
+            android:src="@drawable/flood" />
 
         <TextView
             android:id="@+id/textView1"
@@ -21,15 +21,14 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/scrollView1"
-            android:text="•Become aware of fire evacuation and earthquake safety plans for all of the buildings you occupy regularly" />
+            android:text="•You’ll be better prepared to withstand a flood if you have the following items available – packed and ready to go in case you need to evacuate your home:-\n•Water—at least a 3-day supply; one gallon per person per day\n•Food—at least a 3-day supply of non-perishable, easy-to-prepare food\n•First Aid kit\n•Battery-powered or hand-crank radio (NOAA Weather Radio, if possible)" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
-            android:layout_height="109dp"
-            android:layout_gravity="center"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="17dp"
-            android:src="@drawable/dch" />
+            android:src="@drawable/dflood" />
 
         <TextView
             android:id="@+id/textView2"
@@ -40,19 +39,19 @@
             android:layout_marginTop="20dp"
             android:layout_weight="0.55"
             android:gravity="left"
-            android:text="•Practice drop, cover and hold on \n•Keep a flashlight and sturdy shoes by each person’s bed in case the earthquake strikes in the middle of the night. \n•Hang heavy items, such as pictures and mirrors, away from beds, couches and anywhere people sleep or sit. " />
+            android:text="•Be prepared to evacuate at a moment’s notice. \n•When a flood or flash flood warning is issued for your area, head for higher ground and stay there.\n•Keep children out of the water. They are curious and often lack judgment about running water or contaminated water. " />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:src="@drawable/deq" />
+            android:layout_height="73dp"
+            android:src="@drawable/aflood" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="•If you are in bed, stay there, curl up and hold on. Protect your head with a pillow.\n•Stay away from windows to avoid being injured by shattered glass.\n•If outside, find a clear spot (away from buildings, power lines, trees, streetlights) and drop to the ground. Stay there until the shaking stops." 
+            android:text="•Return home only when officials have declared the area safe.\n•Before entering your home, look outside for loose power lines, damaged gas lines, foundation cracks or other damage.\n•Watch out for wild animals, especially poisonous snakes that may have come into your home with the floodwater." 
             android:gravity="left"
             />
 

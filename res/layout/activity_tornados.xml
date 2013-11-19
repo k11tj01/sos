@@ -1,17 +1,47 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Tornados" >
-
-
-<WebView  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/webview"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"/>
+    android:layout_height="fill_parent">
+	
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="105dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@drawable/t" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/scrollView1"
+            android:text="•During any storm, listen to local news or a NOAA Weather Radio to stay informed about tornado watches and warnings.\n•Know your community's warning system. Communities have different ways of warning residents about tornados, with many having sirens intended for outdoor warning purposes.\n•Pick a safe room in your home where household members and pets may gather during a tornado. This should be a basement, storm cellar or an interior room on the lowest floor with no windows." />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/tornado" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/scrollView1"
+            android:layout_below="@+id/scrollView1"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.55"
+            android:gravity="left"
+            android:text="•The safest place to be is an underground shelter, basement or safe room.\n•If no underground shelter or safe room is available, a small, windowless interior room or hallway on the lowest level of a sturdy building is the safest alternative. \n•Go to the nearest sturdy building or shelter immediately, using your seat belt if driving.\n•Do not wait until you see the tornado. " />
+
+      
+    </TableLayout>
+	
+</ScrollView>

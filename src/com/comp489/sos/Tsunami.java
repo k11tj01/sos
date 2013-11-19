@@ -12,9 +12,9 @@ public class Tsunami extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tsunami);
-		WebView myWebView = (WebView) findViewById(R.id.webview);
-		myWebView.loadUrl("http://www.redcross.org/prepare/disaster/tsunami");
-		myWebView.setWebViewClient(new WebViewClient());
+//		WebView myWebView = (WebView) findViewById(R.id.webview);
+//		myWebView.loadUrl("http://www.redcross.org/prepare/disaster/tsunami");
+//		myWebView.setWebViewClient(new WebViewClient());
 	}
 
 	@Override
