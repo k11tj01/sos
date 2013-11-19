@@ -35,7 +35,6 @@ public class SendSMSClass  {
 
 	sentReceiver = new BroadcastReceiver()
 	{
-
 		@Override
 		public void onReceive(Context arg0, Intent arg1) 
 		{
