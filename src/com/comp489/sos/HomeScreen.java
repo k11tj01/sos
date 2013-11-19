@@ -12,16 +12,21 @@ import android.widget.*;
 
 public class HomeScreen extends Activity implements OnClickListener{
 	ImageButton med;
+	Button medical;
 	Button naturalDisasters;
+	Button emergencyContact;
+	Button fire;
+	Button sendAlert;
+	Button healthInfo;
 	Button hi;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home_screen);
-		med = (ImageButton) findViewById(R.id.imageButtonMed);
 		med.setOnClickListener(this);
 		naturalDisasters = (Button) findViewById(R.id.Natural_Disasters);
 		naturalDisasters.setOnClickListener(this);
+		//medical = (Button) findViewById(R.id.)
 		hi = (Button) findViewById(R.id.hi);
 		
 		hi.setOnClickListener(this);
@@ -38,13 +43,17 @@ public class HomeScreen extends Activity implements OnClickListener{
 	public void onClick(View view) {
 		switch(view.getId())
 		{
-			case R.id.imageButtonMed:
-				Intent i1 = new Intent(this, MedicalActivity.class);			
-				startActivity(i1);
-				break;
+//			case R.id.imageButtonMed:
+//				Intent i1 = new Intent(this, MedicalActivity.class);			
+//				startActivity(i1);
+//				break;
 			case R.id.Natural_Disasters:
 				Intent i2 = new Intent(this, NaturalDisasters.class);
 				startActivity(i2);
+			//case R.id.Fire:
+				//Intent i3 = new Intent(this, Fire.class)
+				//break;
+			//case R.id	
 		//	case R.id.Fire:
 			//	Intent i3 = new Intent(this, FireActivity.class)
 				break;
