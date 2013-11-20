@@ -50,11 +50,11 @@
             android:label="@string/title_activity_tornados" >
         </activity>
 
-        <intent-filter>
+    <!--     <intent-filter>
             <action android:name="android.intent.action.MEDICAL" />
 
             <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+        </intent-filter> -->
 
         <activity
             android:name="com.comp489.sos.CPRInstr"
@@ -78,10 +78,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
+        <!-- <activity
             android:name="com.comp489.sos.SendAlertSMS"
             android:label="@string/title_activity_send_alert_sms" >
-        </activity>
+        </activity> -->
         <activity
             android:name="com.comp489.sos.HeimlichInstr"
             android:label="@string/title_activity_heimlich_instr" >

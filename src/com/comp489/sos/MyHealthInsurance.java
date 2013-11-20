@@ -1,4 +1,4 @@
-package com.comp489.sos;
+ package com.comp489.sos;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -19,7 +19,8 @@ public class MyHealthInsurance extends Activity {
 	}
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
+	public boolean onCreateOptionsMenu(Menu menu) 
+	{
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.my_health_insurance, menu);
 		return true;

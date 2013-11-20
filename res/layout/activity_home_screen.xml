@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/sostitle"
+    android:background="@drawable/sos"
     android:layout_height="match_parent"
     android:columnCount="1"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -13,35 +14,15 @@
 
     <Button
         android:id="@+id/medical"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#FBFFF5"
         android:text="Medical" />
 
     <Button
-        android:id="@+id/Fire"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignTop="@+id/Natural_Disasters"
-        android:layout_marginLeft="19dp"
-        android:layout_toRightOf="@+id/Natural_Disasters"
-        android:background="#ffff0000"
-        android:text="Fire" />	
-    
-
-    <Button
-        android:id="@+id/Natural_Disasters"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:background="#476A77"
-        android:text="Natural Disasters" />
-
-    <Button
         android:id="@+id/emergencyContact"
-        android:layout_width="97dp"
-        android:layout_height="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignTop="@+id/sendAlert"
         android:background="#CC1271"
@@ -49,8 +30,8 @@
 
     <Button
         android:id="@+id/sendAlert"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="53dp"
         android:background="#FC9608"
@@ -60,20 +41,32 @@
     <Button
         android:id="@+id/hi"
         android:layout_width="wrap_content"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/Fire"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/sendAlert"
         android:text=" Health Insurance Info" 
         android:background="#FBFFF5"/>
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <Button
+        android:id="@+id/Natural_Disasters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/emergencyContact"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="76dp"
-        android:src="@drawable/sostitle" />
+        android:layout_alignBaseline="@+id/medical"
+        android:layout_alignBottom="@+id/medical"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/medical"
+        android:background="#476A77"
+        android:text="Natural Disasters" />
+
+    <Button
+        android:id="@+id/Fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Natural_Disasters"
+        android:layout_marginRight="15dp"
+        android:background="#ffff0000"
+        android:text="Fire" />
 
 </RelativeLayout>
