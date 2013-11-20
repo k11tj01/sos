@@ -97,6 +97,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 			case R.id.Natural_Disasters:
 			Intent i2 = new Intent(this, NaturalDisasters.class);
 			startActivity(i2);
+			break;
 			
 			case R.id.medical:
 				startActivity(new Intent(this,MedicalActivity.class));

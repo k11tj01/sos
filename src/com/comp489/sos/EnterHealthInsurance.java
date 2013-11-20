@@ -92,7 +92,7 @@ public class EnterHealthInsurance extends Activity {
 				}
 				finally
 				{
-						Toast.makeText(getBaseContext(), "Health Insurance Info Saved" + "\n" +csv, Toast.LENGTH_LONG).show();
+						Toast.makeText(getBaseContext(), "Health Insurance Info Saved", Toast.LENGTH_LONG).show();
 						
 						String collect = null;
 						String loadFile = getResources().getString(R.string.sosFile);

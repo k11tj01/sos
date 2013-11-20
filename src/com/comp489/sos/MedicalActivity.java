@@ -14,7 +14,6 @@ import android.widget.Toast;
 public class MedicalActivity extends Activity implements AdapterView.OnItemClickListener {
 
 	ListView list;
-	Button alert;
 	String[] choices = {"UNCONSCIOUS", "CPR", "STROKE", "CHOKING", "HEAD/NECK/SPINE INJURY", "SEVERE BLEEDING"};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,7 @@ public class MedicalActivity extends Activity implements AdapterView.OnItemClick
 			
 		};
 		
-		alert.setOnClickListener(listener);
+		
 		
 		//adapter sends row data to list view, in android specified format (TextView)
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,choices);

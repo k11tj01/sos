@@ -85,7 +85,7 @@ public class ViewHealthInsurance extends Activity {
 	//Toast.makeText(this, policyOwnerStr, Toast.LENGTH_LONG).show();
 		provider.setText("Provider: " + providerStr);
 		policyNo.setText("Policy Number: "+ policyNoStr);
-		policyOwner.setText("Policy Owner "+ policyOwnerStr);
+		policyOwner.setText("Policy Owner: "+ policyOwnerStr);
 		
 	}
 
