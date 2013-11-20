@@ -52,7 +52,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 		naturalDisasters = (Button) findViewById(R.id.Natural_Disasters);
 		naturalDisasters.setOnClickListener(this);
 		
-		loadFile = getResources().getString(R.id.emergencyContact);
+		loadFile = getResources().getString(R.string.sosContacts);
 
 		healthInfoE = (Button) findViewById(R.id.healthInfoEnter);
 		healthInfoE.setOnClickListener(this);
