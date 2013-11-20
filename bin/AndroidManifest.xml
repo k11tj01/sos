@@ -111,6 +111,10 @@
             android:name="com.comp489.sos.ViewHealthInsurance"
             android:label="@string/title_activity_view_health_insurance" >
         </activity>
+        <activity
+            android:name="com.comp489.sos.DisplayContacts"
+            android:label="@string/title_activity_display_contacts" >
+        </activity>
     </application>
 
 </manifest>

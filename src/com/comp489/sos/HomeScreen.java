@@ -39,6 +39,9 @@ public class HomeScreen extends Activity implements OnClickListener{
 		healthInfoV = (Button) findViewById(R.id.healthInfoView);
 		healthInfoV.setOnClickListener(this);
 		
+		emergencyContact = (Button) findViewById(R.id.emergencyContact);
+		emergencyContact.setOnClickListener(this);
+		
 		res = this.getResources();
 		
 		
@@ -78,6 +81,10 @@ public class HomeScreen extends Activity implements OnClickListener{
 				
 			case R.id.healthInfoView:
 				startActivity(new Intent(this, ViewHealthInsurance.class));
+				break;
+				
+			case R.id.emergencyContact:
+				startActivity(new Intent(this, DisplayContacts.class));
 				break;
 				
 		}

@@ -61,7 +61,6 @@ public class EnterHealthInsurance extends Activity {
 		
 		enter.setOnClickListener(new View.OnClickListener()
 		{
-
 			@Override
 			public void onClick(View arg0) {
 				storeHI = res.getString(R.string.sosFile);

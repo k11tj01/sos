@@ -41,9 +41,7 @@ public class ViewHealthInsurance extends Activity {
 		
 		try 
 		{
-		
-		
-				in = openFileInput(loadFile);
+			in = openFileInput(loadFile);
 			byte[] dataArray = new byte[in.available()];
 			
 			//sentinel value for bytes
