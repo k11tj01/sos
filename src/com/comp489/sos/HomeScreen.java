@@ -52,7 +52,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 		naturalDisasters = (Button) findViewById(R.id.Natural_Disasters);
 		naturalDisasters.setOnClickListener(this);
 		
-		loadFile = getResources().getString(R.id.emergencyContact);
+		loadFile = getResources().getString(R.string.sosContacts);
 
 		healthInfoE = (Button) findViewById(R.id.healthInfoEnter);
 		healthInfoE.setOnClickListener(this);
@@ -199,8 +199,9 @@ public class HomeScreen extends Activity implements OnClickListener{
 					for(String n : numbers)
 					{
 						sms.sendTextMessage(n.toString(),null, message.toString(),sentPendIntent, delivered_pendIntent);
+						Toast.makeText(this, "Message Sent to " + n,Toast.LENGTH_SHORT).show();
 					}
-					Toast.makeText(this, "Message Sent",Toast.LENGTH_SHORT).show();
+					
 				}
 				else{
 					Toast.makeText(this, "Either phone number or text is missing",Toast.LENGTH_SHORT).show();

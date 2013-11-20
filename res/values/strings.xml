@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-     <string name="sosContacts">sosEmergencyContacts.csv</string>
+    <string name="sosContacts">sosEmergencyContacts.csv</string>
 	<string name = "sosFile">sosHealthInsurance.csv</string>
 	<string name = "sosMessage" >SOS Alert! (This is an automated message)</string>
     <string name="app_name">SOS</string>
