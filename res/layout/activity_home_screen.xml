@@ -26,6 +26,7 @@
         android:layout_marginLeft="19dp"
         android:layout_toRightOf="@+id/Natural_Disasters"
         android:background="#ffff0000"
+         android:layout_alignParentRight="true"
         android:text="Fire" />	
     
 
@@ -57,23 +58,31 @@
         android:layout_toLeftOf="@+id/Fire"
         android:text="Send Alert" />
 
-    <Button
-        android:id="@+id/hi"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"
-        android:layout_alignLeft="@+id/Fire"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/sendAlert"
-        android:text=" Health Insurance Info" 
-        android:background="#FBFFF5"/>
-
-    <ImageView
+<!--      <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/emergencyContact"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="76dp"
-        android:src="@drawable/sostitle" />
+        android:src="@drawable/sostitle" /> -->
+
+    <Button
+        android:id="@+id/healthInfoEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_above="@+id/sendAlert"
+        android:layout_alignLeft="@+id/Fire"
+        android:background="#FBFFF5"
+        android:text="Enter Health Insurance Info" />
+
+    <Button
+        android:id="@+id/healthInfoView"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/healthInfoEnter"
+        android:layout_alignTop="@+id/sendAlert"
+        android:background="#FBFFF5"
+        android:text="View Health Insurance Info" />
 
 </RelativeLayout>

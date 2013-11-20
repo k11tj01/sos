@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class NaturalDisasters extends Activity implements AdapterView.OnItemClickListener {
 	
 	ListView l;
-	String[] choices = {"EARTH QUAKE", "FLOODS", "HURRICANES","WILD FIRES","TORNADOS","TSUNAMI"};
+	String[] choices = {"EARTHQUAKE", "FLOODS", "HURRICANES","WILD FIRES","TORNADOS","TSUNAMI"};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

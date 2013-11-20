@@ -17,14 +17,14 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="17dp"
+            android:layout_height="219dp"
+            
             android:src="@drawable/hurri" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="420dp"
-            android:layout_height="173dp"
+            android:layout_height="352dp"
             android:src="@drawable/hurric" />
 
         

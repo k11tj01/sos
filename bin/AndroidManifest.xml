@@ -19,7 +19,6 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.comp489.sos.HomeScreen"
-            android:background="#FA5B6F"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,7 +58,7 @@
         </intent-filter>
 
         <activity
-            android:name="com.comp489.sos.CPRInstr"
+            android:name="com.comp489.sos.CPR"
             android:label="@string/title_activity_cprinstr" >
             <intent-filter>
                 <action android:name="android.intent.action.CPR" />
@@ -85,7 +84,7 @@
             android:label="@string/title_activity_send_alert_sms" >
         </activity>
         <activity
-            android:name="com.comp489.sos.HeimlichInstr"
+            android:name="com.comp489.sos.Choking"
             android:label="@string/title_activity_heimlich_instr" >
         </activity>
         <activity
@@ -105,7 +104,7 @@
             android:label="@string/title_activity_spine_neck_head_injury" >
         </activity>
         <activity
-            android:name="com.comp489.sos.MyHealthInsurance"
+            android:name="com.comp489.sos.EnterHealthInsurance"
             android:label="@string/title_activity_my_health_insurance" >
         </activity>
         <activity
