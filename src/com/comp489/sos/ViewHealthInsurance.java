@@ -80,12 +80,12 @@ public class ViewHealthInsurance extends Activity {
 			 policyNoStr = tokenizer.nextToken();
 			 policyOwnerStr = tokenizer.nextToken();
 		
-	Toast.makeText(this, providerStr, Toast.LENGTH_LONG).show();
-	Toast.makeText(this, policyNoStr, Toast.LENGTH_LONG).show();
-	Toast.makeText(this, policyOwnerStr, Toast.LENGTH_LONG).show();
-		provider.setText(providerStr);
-		policyNo.setText(policyNoStr);
-		policyOwner.setText(policyOwnerStr);
+	//Toast.makeText(this, providerStr, Toast.LENGTH_LONG).show();
+	//Toast.makeText(this, policyNoStr, Toast.LENGTH_LONG).show();
+	//Toast.makeText(this, policyOwnerStr, Toast.LENGTH_LONG).show();
+		provider.setText("Provider: " + providerStr);
+		policyNo.setText("Policy Number: "+ policyNoStr);
+		policyOwner.setText("Policy Owner "+ policyOwnerStr);
 		
 	}
 
