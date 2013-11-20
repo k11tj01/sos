@@ -8,6 +8,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context=".MyHealthInsurance" >
+    
+    
 
     <EditText
         android:id="@+id/provider"
@@ -26,5 +28,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Policy Owner"/>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity ="center_horizontal"
+        android:text="Enter" />
 
 </LinearLayout>

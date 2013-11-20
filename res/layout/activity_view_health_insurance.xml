@@ -9,8 +9,27 @@
     tools:context=".ViewHealthInsurance" >
 
     <TextView
+        android:id="@+id/providerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/policyOwnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/providerView"
+        android:layout_below="@+id/providerView"
+        android:layout_marginTop="18dp"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/policyNoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/policyHolderView"
+        android:layout_alignLeft="@+id/policyHolderView"
+        android:layout_marginBottom="19dp"
         android:text="@string/hello_world" />
 
 </RelativeLayout>

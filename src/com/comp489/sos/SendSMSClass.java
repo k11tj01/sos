@@ -35,6 +35,15 @@ public class SendSMSClass extends Activity {
 			@Override
 			public void onReceive(Context arg0, Intent arg1) {
 				switch(getResultCode()){
+	sentReceiver = new BroadcastReceiver()
+	{
+		@Override
+		public void onReceive(Context arg0, Intent arg1) 
+		{
+			// TODO Auto-generated method stub
+			
+			switch (getResultCode())
+			{
 				case Activity.RESULT_OK:
 					Toast.makeText(getBaseContext(), "SMS sent", Toast.LENGTH_SHORT).show();
 					break;
