@@ -15,21 +15,23 @@
         android:text="@string/hello_world" />
 
     <TextView
-        android:id="@+id/policyNoView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/policyOwnerView"
-        android:layout_below="@+id/policyOwnerView"
-        android:layout_marginTop="40dp"
-        android:text="@string/hello_world" />
-
-    <TextView
         android:id="@+id/policyOwnerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/providerView"
         android:layout_below="@+id/providerView"
         android:layout_marginTop="37dp"
+        android:layout_below="@+id/policyNoView"
+        android:layout_marginTop="40dp"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/policyNoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/policyOwnerView"
+        android:layout_below="@+id/providerView"
+        android:layout_marginTop="15dp"
         android:text="@string/hello_world" />
 
 </RelativeLayout>

@@ -51,12 +51,6 @@
             android:label="@string/title_activity_tornados" >
         </activity>
 
-    <!--     <intent-filter>
-            <action android:name="android.intent.action.MEDICAL" />
-
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter> -->
-
         <activity
             android:name="com.comp489.sos.CPR"
             android:label="@string/title_activity_cprinstr" >
@@ -79,10 +73,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <!-- <activity
-            android:name="com.comp489.sos.SendAlertSMS"
-            android:label="@string/title_activity_send_alert_sms" >
-        </activity> -->
         <activity
             android:name="com.comp489.sos.Choking"
             android:label="@string/title_activity_heimlich_instr" >

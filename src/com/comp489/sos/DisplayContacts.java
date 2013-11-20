@@ -13,6 +13,7 @@ import android.content.DialogInterface;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.BaseColumns;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
 import android.view.Menu;
@@ -126,7 +127,7 @@ public class DisplayContacts extends Activity implements AdapterView.OnItemClick
 			while(cur.moveToNext())
 			{
 				//id of contact
-				String id = cur.getString(cur.getColumnIndex(ContactsContract.Contacts._ID));
+				String id = cur.getString(cur.getColumnIndex(BaseColumns._ID));
 				String name = cur.getString(cur.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
 				
 				
