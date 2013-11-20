@@ -22,7 +22,6 @@ public class MedicalActivity extends Activity implements AdapterView.OnItemClick
 		setContentView(R.layout.activity_medical);
 		
 		list = (ListView) findViewById(R.id.listView1);
-		alert = (Button) findViewById(R.id.alert);
 		
 		OnClickListener listener = new View.OnClickListener()
 		{
