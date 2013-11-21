@@ -29,6 +29,7 @@ public class DisplayContacts extends Activity implements AdapterView.OnItemClick
 	ArrayList<String> phoneNumbers;
 	ArrayList<String> emergencyNos;
 	ArrayList<String> names;
+	String[] content;
 	Button done;
 	String storeFile;
 	String[] contentNo;
@@ -46,14 +47,15 @@ public class DisplayContacts extends Activity implements AdapterView.OnItemClick
 		done = (Button) findViewById(R.id.done);
 		
 		storeFile = getResources().getString(R.string.sosContacts);
-		
+		content = null;
 		
 		done.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				
-				String[] content = new String[emergencyNos.size()];
+				//write selcetions (added to arraylist) to file (overwrites)
+				content = new String[emergencyNos.size()];
 				int count = 0;
 				for(String no : emergencyNos)
 				{
@@ -100,7 +102,6 @@ public class DisplayContacts extends Activity implements AdapterView.OnItemClick
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
 				
-				
 			}
 		});
 		
@@ -121,16 +122,15 @@ public class DisplayContacts extends Activity implements AdapterView.OnItemClick
 		
 		//cur.moveToFirst();
 		
-		//iterates through cursor which points to contact entries
+		//if contacts exist
 		if(cur.getCount()>0)
 		{
+			//moves through rows of contacts db (Content Provider)
 			while(cur.moveToNext())
 			{
 				//id of contact
 				String id = cur.getString(cur.getColumnIndex(BaseColumns._ID));
 				String name = cur.getString(cur.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
-				
-				
 				
 				//Toast.makeText(this, name, Toast.LENGTH_LONG).show();
 				

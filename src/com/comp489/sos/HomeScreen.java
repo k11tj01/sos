@@ -33,15 +33,16 @@ public class HomeScreen extends Activity implements OnClickListener{
 	Button healthInfoV;
 	String writeName;
 	String sosContacts;
+	String[] content;
 	Resources res;
 	FileInputStream in;
 	File file;
 	String message;
 	String phoneNumber,collect, loadFile;
 	BroadcastReceiver sentReceiver, deliveredReceiver, receiver;
-	String SENT = "SMS_SENT";
-	String DELIVERED = "SMS_DELIVERED";
-	String text = "Automated response has been sent";
+	final String SENT = "SMS_SENT";
+	final String DELIVERED = "SMS_DELIVERED";
+	final String text = "Automated response has been sent";
 	ArrayList<String> numbers;
 
 	@Override
@@ -64,6 +65,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 		emergencyContact.setOnClickListener(this);
 		
 		res = this.getResources();
+		content = null;
 		
 		
 		//medical = (Button) findViewById(R.id.)
@@ -139,20 +141,27 @@ public class HomeScreen extends Activity implements OnClickListener{
 			finally
 			{
 				try {
-					in.close();
-					//Toast.makeText(getBaseContext(), collect, Toast.LENGTH_LONG ).show();
-					//t.show();
+					if(in != null)
+						in.close();
+					else
+						Toast.makeText(getBaseContext(), "Please Select Emergency Contacts First", Toast.LENGTH_SHORT ).show();
+					
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
-			StringTokenizer tokenizer = new StringTokenizer(collect, ",");
-			while(tokenizer.hasMoreTokens())
+			
+			if(collect != null)
 			{
-				numbers.add(tokenizer.nextToken());
-			}
-
+				StringTokenizer tokenizer = new StringTokenizer(collect, ",");
+				while(tokenizer.hasMoreTokens())
+				{
+					String str = tokenizer.nextToken();
+					if(!numbers.contains(str))
+						numbers.add(str);
+				}
+		
 			final PendingIntent sentPendIntent = PendingIntent.getBroadcast(this,0, new Intent(SENT), 0);
 			final PendingIntent delivered_pendIntent = PendingIntent.getBroadcast(this, 0, new Intent(DELIVERED), 0);
 			sentReceiver = new BroadcastReceiver(){
@@ -161,7 +170,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 				public void onReceive(Context arg0, Intent arg1) {
 					switch(getResultCode()){
 					case Activity.RESULT_OK:
-						Toast.makeText(getBaseContext(), "SMS sent", Toast.LENGTH_SHORT).show();
+						//Toast.makeText(getBaseContext(), "SMS sent", Toast.LENGTH_SHORT).show();
 						break;
 					case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
 						Toast.makeText(getBaseContext(), "Generic failure", Toast.LENGTH_SHORT).show();
@@ -195,20 +204,25 @@ public class HomeScreen extends Activity implements OnClickListener{
 			registerReceiver(sentReceiver, new IntentFilter(SENT));
 			registerReceiver(deliveredReceiver, new IntentFilter(DELIVERED));
 			message = res.getString(R.string.sosMessage);
-			for(int i=0;i<numbers.size();i++){
-				if(numbers.get(i).toString().trim().length()>0 && message.toString().trim().length()>0){
+			
+				//Toast.makeText(this, "" + numbers.size(),Toast.LENGTH_LONG).show();
+				
 					SmsManager sms = SmsManager.getDefault();
 					for(String n : numbers)
 					{
+						if(n.toString().trim().length()>0 && message.toString().trim().length()>0)
+						{
 						sms.sendTextMessage(n.toString(),null, message.toString(),sentPendIntent, delivered_pendIntent);
 						Toast.makeText(this, "Message Sent to " + n,Toast.LENGTH_SHORT).show();
+						}
+						else{
+							Toast.makeText(this, "Either phone number or text is missing",Toast.LENGTH_SHORT).show();
+						}	
 					}
 					
-				}
-				else{
-					Toast.makeText(this, "Either phone number or text is missing",Toast.LENGTH_SHORT).show();
-				}	
+				
 			}	
+			
 			break;
 
 		}
