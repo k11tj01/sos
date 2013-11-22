@@ -14,13 +14,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
+import android.telephony.PhoneStateListener;
 import android.telephony.SmsManager;
+import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 public class HomeScreen extends Activity implements OnClickListener{
@@ -31,6 +33,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 	Button sendAlert;
 	Button healthInfoE;
 	Button healthInfoV;
+	Button call911;
 	String writeName;
 	String sosContacts;
 	String[] content;
@@ -64,6 +67,9 @@ public class HomeScreen extends Activity implements OnClickListener{
 		emergencyContact = (Button) findViewById(R.id.emergencyContact);
 		emergencyContact.setOnClickListener(this);
 		
+		call911 = (Button) findViewById(R.id.call911);
+		call911.setOnClickListener(this);
+		
 		res = this.getResources();
 		content = null;
 		
@@ -84,19 +90,62 @@ public class HomeScreen extends Activity implements OnClickListener{
 		sendAlert.setOnClickListener(this);
 
 		res = this.getResources();		
+		
+		//need phone listener to tell when call is done and return here
+		PhoneCallListener phone = new PhoneCallListener();
+		
+		//similar to smsManager mechanics - instantiating manually with default from Context
+		//TelephonyManager telMan = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
+		//telMan.listen(phone, PhoneStateListener.LISTEN_CALL_STATE);
 	}
 
+	//adapted from http://www.mkyong.com/android/how-to-make-a-phone-call-in-android/
+	//only implementing checks for calling from this app, not receiving calls
+	private class PhoneCallListener extends PhoneStateListener{
+		private boolean calling =  false;
+		public void onCallStateChanged(int state, String number)
+		{
+			if(state ==TelephonyManager.CALL_STATE_OFFHOOK)
+			{
+				calling = true;
+			}
+			
+			//if idle, restart SOS app and end call
+			if(state == TelephonyManager.CALL_STATE_IDLE)
+			{
+				if(calling)
+				{
+					//get intent representing sos application
+					Intent i = getBaseContext().getPackageManager().getLaunchIntentForPackage(getBaseContext().getPackageName());
+					i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//clears top of stack 
+					//-->new instance isn't created; already running instance of app is continued
+					startActivity(i);
+					calling = false;
+				}
+			}
+		}
+			
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.home_screen, menu);
 		return true;
 	}
+
 	
 	@Override
 	public void onClick(View view){
 		switch(view.getId())
 		{
+		
+		//adapted from http://stackoverflow.com/questions/15842328/android-intent-action-call-uri
+		case R.id.call911:
+			Intent callIntent = new Intent(Intent.ACTION_CALL);
+			callIntent.setData(Uri.parse("tel:911")); //uniform resource identifier static method
+			startActivity(callIntent); //starts built-in activity that calls number in set data
+			break;
+		
 			case R.id.Natural_Disasters:
 			Intent i2 = new Intent(this, NaturalDisasters.class);
 			startActivity(i2);
@@ -221,8 +270,6 @@ public class HomeScreen extends Activity implements OnClickListener{
 							Toast.makeText(this, "Either phone number or text is missing",Toast.LENGTH_SHORT).show();
 						}	
 					}
-					
-				
 			}	
 			
 			break;

@@ -76,4 +76,12 @@
         android:background="#CC1271"
         android:text="View Health Insurance Info" />
 
+    <Button
+        android:id="@+id/call911"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/healthInfoView"
+        android:layout_centerHorizontal="true"
+        android:text="Call 911" />
+
 </RelativeLayout>
