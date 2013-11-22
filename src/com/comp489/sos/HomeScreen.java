@@ -116,7 +116,9 @@ public class HomeScreen extends Activity implements OnClickListener{
 				case R.id.emergencyContact:
 					startActivity(new Intent(this, DisplayContacts.class));
 					break;
-			
+				case R.id.Fire:
+					startActivity(new Intent(this, Fire.class));
+					break;
 			case R.id.sendAlert:
 			try 
 			{

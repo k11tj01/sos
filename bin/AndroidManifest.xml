@@ -50,7 +50,6 @@
             android:name="com.comp489.sos.Tornados"
             android:label="@string/title_activity_tornados" >
         </activity>
-
         <activity
             android:name="com.comp489.sos.CPR"
             android:label="@string/title_activity_cprinstr" >
@@ -105,7 +104,26 @@
             android:name="com.comp489.sos.DisplayContacts"
             android:label="@string/title_activity_display_contacts" >
         </activity>
-        
+        <activity
+            android:name="com.comp489.sos.FireTypeA"
+            android:label="@string/title_activity_fire_type" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.FireTypeB"
+            android:label="@string/title_activity_fire_type_b" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.FireTypeC"
+            android:label="@string/title_activity_fire_type_c" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.FireTypeD"
+            android:label="@string/title_activity_fire_type_d" >
+        </activity>
+        <activity
+            android:name="com.comp489.sos.Fire"
+            android:label="@string/title_activity_fire" >
+        </activity>
     </application>
 
 </manifest>

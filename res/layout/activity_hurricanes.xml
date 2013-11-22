@@ -10,23 +10,41 @@
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="420dp"
-            android:layout_height="413dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/hurricane" />
+            android:src="@drawable/ihurricane" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•Learn the elevation level of your property and whether the land is flood-prone. This will help you know how your property will be affected when storm surge or tidal flooding are forecasted.\n•Identify levees and dams in your area and determine whether they pose a hazard to you.\n•Learn community hurricane evacuation routes and how to find higher ground. Determine where you would go and how you would get there if you needed to evacuate." />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="219dp"
-            
-            android:src="@drawable/hurri" />
+            android:layout_gravity="center"
+            android:src="@drawable/dhurricane" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•Listen to the radio or TV for information.\n•Secure your home, close storm shutters and secure outdoor objects or bring them indoors.\n•Turn off utilities if instructed to do so. Otherwise, turn the refrigerator thermostat to its coldest setting and keep its doors closed.\n•Turn off propane tanks\n•Avoid using the phone, except for serious emergencies.\n•Ensure a supply of water for sanitary purpose such as cleaning and flushing toilets. Fill the bathtub and other larger containers with water." />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="420dp"
-            android:layout_height="352dp"
-            android:src="@drawable/hurric" />
-
+            android:layout_width="wrap_content"
+            android:layout_height="179dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.03"
+            android:src="@drawable/ahurricane" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•Continue listening to a NOAA Weather Radio or the local news for the latest updates.\n•If you evacuated, return home only when officials say it is safe.\n•If you cannot return home and have immediate housing needs. Text SHELTER + your ZIP code to 43362 (4FEMA) to find the nearest shelter in your area (example: shelter 12345).\n•Keep away from loose or dangling power lines and report them immediately to the power company.\n•Drive only if necessary and avoid flooded roads and washed¬ out bridges. Stay off the streets. If you must go out watch for fallen objects; downed electrical wires; and weakened walls, bridges, roads, and sidewalks." />
         
 
     </TableLayout>

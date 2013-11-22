@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/scrollView1"
+            android:text="•Use water, or a water extinguisher! \n •Color code: Red \n •Remember: P.A.S.S " />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/waterex" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/scrollView1"
+            android:layout_below="@+id/scrollView1"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.55"
+            android:gravity="left"
+            android:text="•Pull out the pin at the top of extinguisher. " />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="155dp"
+            android:layout_height="120dp"
+            android:src="@drawable/pull" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Aim the nozzle at the base of fire." 
+            android:gravity="left"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="155dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.04"
+            android:src="@drawable/aim" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Squeeze the handles together." />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="155dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/squeeze" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Sweep the nozzle from side to side as you approach the fire." />
+
+    </TableLayout>
+	
+</ScrollView>
