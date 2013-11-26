@@ -1,5 +1,25 @@
 package com.comp489.sos;
 
+/*
+ * Developers: Tibin John, Mesfin Mekonnen, Simon Haile
+ * SOS is an Android application that aims to minimize response time
+ * during emergency situations. During emergencies of any nature, 
+ * timely response can be hindered due to panic, dis-orientation,
+ * unawareness, or mis-information. SOS aims to minimize this response
+ * time by giving its user an organized, comprehensive and step-by-step 
+ * instruction on how to deal with emergencies.
+ *   
+ *  Allows for the user to store and easily retrieve health insurance 
+ *  information. In situations where the user is unable to access 
+ *  and/or remember his/her health insurance information,
+ *  SOS will allow for quick access from the home screen.
+ *  In the case of distress, the user also has the option of sending
+ *  out a text message to a user-identified emergency contact list
+ *  or directly calling 911 from the home screen of the application.
+
+ */
+
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
